@@ -185,7 +185,7 @@ let tokens = [];
                 return s.includes(q) || n.includes(q);  
             });
 
-        document.getElementById("tokensTOP").innerHTML += showTokerTOP(listToken, exchangeRate);
+        document.getElementById("tokensTOP").innerHTML = showTokerTOP(listToken, exchangeRate);
         restoreFavoritesFromLocalStorage();
         addStarListeners();
     });
